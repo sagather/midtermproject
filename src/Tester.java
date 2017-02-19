@@ -74,6 +74,7 @@ public class Tester {
 
     }
 
+    //To build entry tree... WIP
     private static void buildTree(int[] toTranslate) {
 
         String[] str = {"abc", "def", "ghi", "jkl","mno","pqrs","tuv","wxxyz"};

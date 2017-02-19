@@ -86,7 +86,8 @@ public class Tester {
 
             }
             else{
-
+                //this just inserts every letter... I need to get it to insert the first set, and then the
+                //second set as children of the first, and so on...
                 entry.insert(entry.getRoot(), str[toTranslate[i]-2]);
 
             }

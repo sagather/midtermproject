@@ -79,8 +79,9 @@ public class Tester {
 
         String[] str = {"abc", "def", "ghi", "jkl","mno","pqrs","tuv","wxxyz"};
         Map children = entry.getChildren();
+        PrefixTrie trie = entry;
 
-        for(int i = 0; i< toTranslate.length; i++){
+        for(int i : toTranslate){
 
             if(toTranslate[i]<2){
 
@@ -88,12 +89,20 @@ public class Tester {
             else{
                 //this just inserts every letter... I need to get it to insert the first set, and then the
                 //second set as children of the first, and so on...
-                entry.insert(entry.getRoot(), str[toTranslate[i]-2]);
+
+                //inserts from root
+                entry.insert(trie.getRoot(), str[toTranslate[i]-2]);
+                trie.setRoot(children.get(str[toTranslate[i]-2]));
 
             }
 
         }
 
+    }
+
+    private static PrefixTrie buildTree(Map children, String[] translate){
+
+        return null;
     }
 
 }

@@ -9,7 +9,7 @@ public class FileIO {
 
     public static File openFile(){
 
-            File dictFile = new File("C:/Users/bcxtr/IdeaProjects/midtermproject/src/dictionary.txt");
+            File dictFile = new File("C:/Users/Gypsey_Belle/IdeaProjects/midtermproject/src/dictionary.txt");
             return dictFile;
 
     }

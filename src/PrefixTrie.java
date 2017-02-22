@@ -61,4 +61,6 @@ public class PrefixTrie {
 
     public Map getChildren(){  return this.root.children;  }
 
+    public void setRoot(Object newRoot){  this.root = (TrieNode) newRoot;  }
+
 }
